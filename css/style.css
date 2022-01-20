@@ -2,13 +2,35 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+
+/* LOCAL FONTS */
 @font-face {
     font-family: 'KosugiMaru-Regular';
     src: url('../assets/fonts/KosugiMaru-Regular.ttf');
 }
 
-body {
-    font-family: 'KosugiMaru-Regular';
+@font-face {
+    font-family: 'BarlowSemiCondensed-Medium';
+    src: url('../assets/fonts/Barlow/Barlow_Semi_Condensed/BarlowSemiCondensed-Medium.ttf');
 }
+
+
+
+
+body {
+    font-family: 'KosugiMaru-Regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* NAV BAR ELEMENTS - FONT */
+.nav__items--barlowFont {
+    font-family: 'BarlowSemiCondensed-Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
