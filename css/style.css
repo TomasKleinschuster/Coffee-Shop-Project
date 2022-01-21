@@ -19,18 +19,36 @@
 
 
 
-
 body {
     font-family: 'KosugiMaru-Regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 ul {
     list-style-type: none;
+    text-decoration: none;
+}
+
+/* Removes links underline */
+a:link {
+    text-decoration: none;
 }
 
 
+
+
 /* NAV BAR ELEMENTS - FONT */
-.nav__items--barlowFont {
+.navbar--barlowFont {
     font-family: 'BarlowSemiCondensed-Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* NAV BAR */
+
+.navbar {
+    background-color: blueviolet;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: space-around;
+    align-items: baseline;
 }
 
