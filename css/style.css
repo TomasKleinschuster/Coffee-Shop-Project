@@ -33,22 +33,46 @@ a:link {
     text-decoration: none;
 }
 
-
-
-
 /* NAV BAR ELEMENTS - FONT */
 .navbar--barlowFont {
     font-family: 'BarlowSemiCondensed-Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* GRID LAYOUT */
+
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-row-gap: 10px;
+}
+
+header {
+    grid-area: "header";
+    margin: 50px;
+}
+
+main {
+    grid-area: "main";
+    margin: 50px;
+}
+
+footer {
+    grid-area: "footer";
+    margin: 50px;
+}
+
 /* NAV BAR */
 
 .navbar {
-    background-color: blueviolet;
-    display: flex;
-    flex-flow: row wrap;
-    margin: auto;
-    justify-content: space-around;
-    align-items: baseline;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
+.navbar__elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
