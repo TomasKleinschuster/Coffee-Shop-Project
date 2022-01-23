@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Not-Spresso</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+        <!-- SCROLL TOP BUTTON -->
+        <!-- INCOMPLETE -->
+        <!-- Idea: Build a SCROLLTOP button in the right bottom -->
+
+        <!-- HEADER BLOCK -->
+        <header>
+
+            <!-- BOX -->
+            <div class="px-3 py-2 bg-dark text-white">
+
+                <!-- GRID CONTAINER (NAV BAR) -->
+                <div class="container">
+
+                    <!-- NAV BAR -->
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                        <!-- NAV BAR - BRAND NAME/TITLE (LEFT) -->
+                        <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none navbar-brand" href="#">
+                            <img class="bi me-2" width="90" height="82" src="../assets/imgs/1046678_barista_coffee_shop_sign_icon.svg" alt="" srcset="">
+                            Not-Spresso
+                        </a>
+
+                        <!-- NAV BAR - ELEMENTS (RIGHT)  -->
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <li>
+                                <a class="nav-link text-secondary" href="../index.html">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="../assets/imgs/216242_home_icon.svg" alt="" srcset="">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-secondary" href="../pages/about.html">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="../assets/imgs/216327_message_typing_icon.svg" alt="" srcset="">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-secondary" href="../pages/service.html">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="../assets/imgs/216540_fi_wi_icon.svg" alt="" srcset="">
+                                    Service
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-secondary" href="../pages/menu.html">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="../assets/imgs/216421_list_th_icon.svg" alt="" srcset="">
+                                    Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-secondary" href="#">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="../assets/imgs/216498_user_icon.svg" alt="" srcset="">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <!-- DARK/LIGHT MODE -->
+                                <!-- INCOMPLETE -->
+                                <!-- Idea: Build a DARK/LIGHT button -->
+                                <a class="nav-link text-secondary" href="#">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="../assets/imgs/216534_weather_sunny_icon.svg" alt="" srcset="">
+                                    Light
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- DROPDOWN -->
+                        <!-- INCOMPLETE -->
+                        <!-- Idea: Build a dropdown menu on breakpoint 495px mediaquery -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="b-example-divider"></div>
+
+        <!-- MAIN BLOCK -->
+        <main>
+
+            <!-- GRID CONTAINER (MAIN CONTACT US) -->
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+                    <!-- MENU IMAGE (RIGHT) -->
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="../assets/imgs/about.png" class="d-block mx-lg-auto img-fluid" width="700" height="500" loading="lazy">
+                    </div>
+
+                    <!-- HOME TEXT (LEFT) -->
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">Contact Us</h1>
+
+                        <hr class="my-4">
+
+                        <div class="container">
+                            <div class="col-md-7 col-lg-8">
+                                <form class="needs-validation" novalidate>
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <label for="firstName" class="form-label">First name</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid first name is required.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label for="lastName" class="form-label">Last name</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                        <div class="invalid-feedback">
+                                            Valid last name is required.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="username" class="form-label">Username</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text">@</span>
+                                            <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                            <div class="invalid-feedback">
+                                                Your username is required.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+                                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                        <div class="invalid-feedback">
+                                            Please enter a valid email address for shipping updates.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="b-example-divider"></div>
+
+        <!-- FOOTER BLOCK (CONTAINER) -->
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="text-muted">&copy; 2022 Coffee Branch City. All right reserved</span>
+                </div>
+
+                <!-- FOOTER LINKS (RIGHT) -->
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="https://twitter.com/"><img class="bi" width="24" height="24" src="../assets/imgs/216402_twitter_social_icon.svg" alt=""></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://web.whatsapp.com/"><img class="bi" width="24" height="24" src="../assets/imgs/843786_whatsapp_icon.svg" alt=""></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://es-la.facebook.com/"><img class="bi" width="24" height="24" src="../assets/imgs/216077_social_facebook_circular_icon.svg" alt=""></a></li>
+                </ul>
+            </footer>
+        </div>
+    
+    <!-- JAVASCRIPT -->
+    <script src="../js/script.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
