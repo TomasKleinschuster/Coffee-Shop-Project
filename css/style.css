@@ -18,61 +18,64 @@
 }
 
 
-
-body {
+/* GRID LAYOUT + FONT + HEIGHT */
+.grid-container {
     font-family: 'KosugiMaru-Regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-ul {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-/* Removes links underline */
-a:link {
-    text-decoration: none;
-}
-
-/* NAV BAR ELEMENTS - FONT */
-.navbar--barlowFont {
-    font-family: 'BarlowSemiCondensed-Medium', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/* GRID LAYOUT */
-
-.grid-layout {
+    height: 100vh;
     display: grid;
+    gap: 10px;
+    /* GRID AREAS POSITION */
     grid-template-areas:
     "header"
     "main"
     "footer"
     ;
-    grid-row-gap: 10px;
 }
 
+.grid-container > * {
+    font-size: 21px;
+    display: flex;
+}
+
+/* GRID AREAS */
 header {
-    grid-area: "header";
-    margin: 50px;
+    grid-area: header;
+    background-color: brown;
 }
 
 main {
-    grid-area: "main";
-    margin: 50px;
+    grid-area: main;
+    background-color: forestgreen;
 }
 
 footer {
-    grid-area: "footer";
-    margin: 50px;
+    grid-area: footer;
+    background-color: blueviolet;
 }
 
-/* NAV BAR */
 
-.navbar {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+/* RESPONSIVE */
+
+/* TABLETS */
+@media screen and (min-width: 768px) {
+    
 }
 
-.navbar__elements {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    
 }
+
+
+/* REMOVES STYLE + DECORATION + UNDERLINE */
+ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+
