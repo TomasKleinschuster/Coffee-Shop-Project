@@ -18,42 +18,6 @@
 }
 
 
-/* GRID LAYOUT + FONT + HEIGHT */
-.grid-container {
-    font-family: 'KosugiMaru-Regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 100vh;
-    display: grid;
-    gap: 10px;
-    /* GRID AREAS POSITION */
-    grid-template-areas:
-    "header"
-    "main"
-    "footer"
-    ;
-}
-
-.grid-container > * {
-    font-size: 21px;
-    display: flex;
-}
-
-/* GRID AREAS */
-header {
-    grid-area: header;
-    background-color: brown;
-}
-
-main {
-    grid-area: main;
-    background-color: forestgreen;
-}
-
-footer {
-    grid-area: footer;
-    background-color: blueviolet;
-}
-
-
 /* RESPONSIVE */
 
 /* TABLETS */
@@ -67,15 +31,6 @@ footer {
 }
 
 
-/* REMOVES STYLE + DECORATION + UNDERLINE */
-ul {
-    list-style-type: none;
-    text-decoration: none;
-}
-
-a:link {
-    text-decoration: none;
-}
 
 
 

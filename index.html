@@ -3,71 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Not-Spresso</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
 </head>
 <body>
 
-    <!-- GRID CONTAINER (LAYOUT + FONT + HEIGHT) -->
-    <div class="grid-container">
+        <!-- SCROLL TOP BUTTON -->
+        <!-- INCOMPLETE -->
+        <!-- Idea: Build a SCROLLTOP button in the right bottom -->
 
         <!-- HEADER BLOCK -->
-        <header class="my-header">
+        <header>
 
-            <!-- NAV BAR -->
-            <nav class="navbar">
+            <!-- BOX -->
+            <div class="px-3 py-2 bg-dark text-white">
 
-                <!-- NAV BAR - BRAND NAME/TITLE -->
-                <div class="navbar__brand">
-                    <img src="assets/imgs/1046678_barista_coffee_shop_sign_icon.svg" alt="" srcset="">
-                    <a class="navbar__item__link" href="#">NOT-SPRESSO</a>
+                <!-- GRID CONTAINER (NAV BAR) -->
+                <div class="container">
+
+                    <!-- NAV BAR -->
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+                        <!-- NAV BAR - BRAND NAME/TITLE (LEFT) -->
+                        <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none navbar-brand" href="#">
+                            <img class="bi me-2" width="90" height="82" src="assets/imgs/1046678_barista_coffee_shop_sign_icon.svg" alt="" srcset="">
+                            Not-Spresso
+                        </a>
+
+                        <!-- NAV BAR - ELEMENTS (RIGHT)  -->
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <li>
+                                <a class="nav-link text-secondary" href="#">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="assets/imgs/216242_home_icon.svg" alt="" srcset="">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-secondary" href="pages/about.html">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="assets/imgs/216327_message_typing_icon.svg" alt="" srcset="">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-secondary" href="pages/service.html">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="assets/imgs/216540_fi_wi_icon.svg" alt="" srcset="">
+                                    Service
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-secondary" href="pages/menu.html">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="assets/imgs/216421_list_th_icon.svg" alt="" srcset="">
+                                    Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-secondary" href="pages/contactus.html">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="assets/imgs/216498_user_icon.svg" alt="" srcset="">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <!-- DARK/LIGHT MODE -->
+                                <!-- INCOMPLETE -->
+                                <!-- Idea: Build a DARK/LIGHT button -->
+                                <a class="nav-link text-secondary" href="#">
+                                    <img class="bi d-block mx-auto mb-1" width="24" height="24" src="assets/imgs/216534_weather_sunny_icon.svg" alt="" srcset="">
+                                    Light
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- DROPDOWN -->
+                        <!-- INCOMPLETE -->
+                        <!-- Idea: Build a dropdown menu on breakpoint 495px mediaquery -->
+                    </div>
                 </div>
-
-                <!-- NAV BAR - ELEMENTS  -->
-                <div class="navbar__elements">
-                    <ul class="navbar__elements__ul">
-                        <li class="navbar__elements__ul__item">
-                            <img src="assets/imgs/216242_home_icon.svg" alt="" srcset="">
-                            <a class="navbar__item__link" href="#">Home</a>
-                        </li>
-                        <li class="navbar__elements__ul__item">
-                            <img src="assets/imgs/216327_message_typing_icon.svg" alt="" srcset="">
-                            <a class="navbar__item__link" href="#">About</a>
-                        </li>
-                        <li class="navbar__elements__ul__item">
-                            <img src="assets/imgs/216540_fi_wi_icon.svg" alt="" srcset="">
-                            <a class="navbar__item__link" href="#">Service</a>
-                        </li>
-                        <li class="navbar__elements__ul__item">
-                            <img src="assets/imgs/216421_list_th_icon.svg" alt="" srcset="">
-                            <a class="navbar__item__link" href="#">Menu</a>
-                        </li>
-                        <li class="navbar__elements__ul__item">
-                            <img src="assets/imgs/216498_user_icon.svg" alt="" srcset="">
-                            <a class="navbar__item__link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+            </div>
         </header>
+
 
         <!-- MAIN BLOCK -->
         <main>
 
+            <!-- GRID CONTAINER (MAIN) -->
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+
+                    <!-- MENU IMAGE (RIGHT) -->
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="assets/imgs/menu.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    </div>
+
+                    <!-- HOME TEXT (LEFT) -->
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3">HOME</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis quae omnis optio praesentium tenetur aspernatur cumque repudiandae autem sint labore voluptates, quasi accusamus esse eum, pariatur cupiditate ut fuga!</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">View Menu</button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
+
 
         <!-- FOOTER BLOCK -->
         <footer>
-
+            
         </footer>
-    </div>
     
-    <!-- JavaScript -->
+    <!-- JAVASCRIPT -->
     <script src="js/script.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
