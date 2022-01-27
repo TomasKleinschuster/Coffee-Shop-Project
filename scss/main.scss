@@ -36,16 +36,36 @@ body {
     // Nav Bar
 
     // Brand and Elements
-    a{
+    a {
         color: $main-color;
-        &:hover{
+        &:hover {
             color: $secondary-color;
         }
     }
 
     // Main
-
-
+    h1 {
+        color: $black;
+    }
+    h2 {
+        color: $black;
+    }
+    label {
+        color: $black;
+    }
+    p {
+        color: $main-color;
+        font-family: $secondary-font;
+    }
+    button {
+        color: $white;
+        background-color: $secondary-color;
+        border-color: $black;
+        &:hover {
+            color: $black;
+            background-color: $secondary-color;
+        }
+    }
 }
 
 

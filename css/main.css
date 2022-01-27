@@ -19,6 +19,28 @@ body {
 .nav-sass a:hover {
   color: #e89d41;
 }
+.nav-sass h1 {
+  color: #000;
+}
+.nav-sass h2 {
+  color: #000;
+}
+.nav-sass label {
+  color: #000;
+}
+.nav-sass p {
+  color: #f6cc65;
+  font-family: "BarlowSemiCondensed-Medium";
+}
+.nav-sass button {
+  color: #fff;
+  background-color: #e89d41;
+  border-color: #000;
+}
+.nav-sass button:hover {
+  color: #000;
+  background-color: #e89d41;
+}
 
 .b-divider {
   height: 1rem;
